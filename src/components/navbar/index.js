@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function PatientRecord() {
+function Navbar() {
     return (
     <div className="navbar">
-        record
+        navbar
     </div>
     );
 }
 
-export default PatientRecord;
+export default Navbar;
