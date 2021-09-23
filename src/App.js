@@ -1,16 +1,7 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/navbar/index.js";
-import Schedule from "./components/pages/schedule/index";
+import AppContainer from "./components/AppContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Schedule />
-    </div>
-  );
-}
-
+const App = () => <AppContainer />;
 
 export default App;
