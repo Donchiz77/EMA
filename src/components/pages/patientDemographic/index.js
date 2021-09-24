@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function PatientDemographic() {
+function patientDemographic() {
     return (
     <div className="navbar">
         patient
@@ -9,4 +9,4 @@ function PatientDemographic() {
     );
 }
 
-export default PatientDemographic;
+export default patientDemographic;

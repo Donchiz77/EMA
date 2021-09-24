@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function HomePage() {
+function homePage() {
     return (
     <div className="homepage">
       <h1>Welcome to the Home Page!</h1>
@@ -19,4 +19,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default homePage;
