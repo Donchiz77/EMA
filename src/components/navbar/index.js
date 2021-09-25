@@ -12,7 +12,7 @@ function navbar() {
       <div>
         <ul className="navbar-nav">
 
-
+gi
           <li className="nav-item">
             <Link
               to="/"
