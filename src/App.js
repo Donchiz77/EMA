@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavTab from "./components/Navbar";
 import Home from "./components/pages/homePage";
 import patientDemographic from "./components/pages/patientDemographic/index";
@@ -14,8 +14,9 @@ import Wrapper from "./components/Wrapper";
 
 function App () {
   return (
-    <Router>
+    
       <div>
+      <Router>
         <NavTab />
         <Wrapper>
         <Switch>
@@ -25,8 +26,9 @@ function App () {
         <Route path="/schedule" component={Schedule} />
         </Switch>
         </Wrapper>
+        </Router>
       </div>
-    </Router>
+    
   );
 }
 
