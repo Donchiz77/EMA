@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+function navbar() {
   return (
     <nav className="topbar navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
@@ -60,4 +60,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;
