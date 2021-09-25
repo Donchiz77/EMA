@@ -1,0 +1,9 @@
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content:flex-start;
+    background-color: blueviolet;
+}
