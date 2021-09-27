@@ -12,7 +12,7 @@ import {
 
 function Schedule() {
   return (
-    <div className="navbar">
+    <div className="appointment">
       <ScheduleComponent currentView="Month">
         <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
       </ScheduleComponent>

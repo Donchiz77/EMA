@@ -6,6 +6,7 @@ import Home from "./components/pages/homePage";
 import patientDemographic from "./components/pages/patientDemographic/index";
 import PatientRecord from "./components/pages/patientRecord/index";
 import Schedule from "./components/pages/schedule/index";
+import Wrapper from "./components/Wrapper";
 
 
 
