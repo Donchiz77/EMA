@@ -4,13 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../../assets/images/loginback.jpg");
+  background-size: auto;
 }
 
 .login-screen__form {
   width: 380px;
   padding: 1.5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 12px 4px gray;
+  border-radius: 5%;
 }
 
 .login-screen__title {
