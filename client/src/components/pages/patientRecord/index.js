@@ -3,7 +3,7 @@ import "./style.css";
 
 function patientRecord() {
     return (
-        <div><h1>patientRecord</h1></div>
+        <div><h1 className="header">patientRecord</h1></div>
     )
 }
 

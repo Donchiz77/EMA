@@ -1,3 +1,5 @@
+//menulist for routing
+
 export const menuList = [
     {
         title:"Home",
@@ -5,7 +7,7 @@ export const menuList = [
     },
  {
         title:"Patientrecord",
-        url:"/patientrecord"
+        url:"/patientRecord"
     },
  {
         title:"Schedule",

@@ -22,7 +22,9 @@ function schedule() {
 
 
 function schedule(){
+  return(
   <div><h1>schedule goes here</h1></div>
+  )
 }
 
 export default schedule;
