@@ -10,12 +10,22 @@ import RegisterScreen from "./components/screens/RegisterScreen";
 import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
 import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
 
+import Wrapper from"./components/pages/Wrapper/index";
+import NavBar from "./components/navbar";
+
+import Home from "./components/pages/home";
+import Patientrecord from "./components/pages/patientRecord";
+import Schedule from "./components/pages/schedule";
+
+
 const App = () => {
   return (
     <Router>
       <div className="app">
+      <NavBar />
         <Switch>
-          <PrivateRoute exact path="/" component={PrivateScreen} />
+          <Wrapper>
+          *<PrivateRoute exact path="/" component={PrivateScreen} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           <Route
@@ -28,6 +38,11 @@ const App = () => {
             path="/passwordreset/:resetToken"
             component={ResetPasswordScreen}
           />
+        </Wrapper>
+
+        <Route exact path = "/" component = {Home}/>
+        <Route  path = "/patientrecord" component = {Patientrecord}/>
+        <Route  path = "/schedule" component = {Schedule}/>
         </Switch>
       </div>
     </Router>

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-image: url("../../assets/images/loginback.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
 .login-screen__form {
