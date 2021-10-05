@@ -8,9 +8,10 @@ connectDB();
 
 app.use(express.json());
 
-app.get("/", (req, res, next) => {
-  res.send("Api running");
-});
+// Serve up static assets
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 // Connecting Routes
 app.use("/api/auth", require("./routes/auth"));
