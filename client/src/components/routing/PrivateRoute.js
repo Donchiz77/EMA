@@ -1,16 +1,20 @@
 import { Redirect, Route } from "react-router-dom";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
+
+const PrivateRoute = ({ component: home, ...rest }) => {
   return (
     <Route
       {...rest}
       render={(props) =>
         localStorage.getItem("authToken") ? (
-          <Component {...props} />
+          <home {...props}  />
         ) : (
           <Redirect to="/login" />
+        
         )
+        
       }
+      
     />
   );
 };

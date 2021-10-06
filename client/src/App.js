@@ -10,7 +10,7 @@ import RegisterScreen from "./components/screens/RegisterScreen";
 import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
 import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
 
-import Wrapper from"./components/pages/Wrapper/index";
+
 import NavBar from "./components/Navbar";
 
 import Home from "./components/pages/home";
@@ -24,7 +24,7 @@ const App = () => {
       <div className="app">
       <NavBar />
         <Switch>
-          <Wrapper>
+          <privateRoute exact path = "/" component = {PrivateRoute} />
           <PrivateRoute exact path="/" component={PrivateScreen} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
@@ -40,11 +40,15 @@ const App = () => {
           />
         
 
+        <div>
+        //navbar hidden from home page
         
+
         <Route  path = "/home" component = {Home}/>
         <Route  path = "/patientRecord" component = {Patientrecord}/>
         <Route path = "/schedule" component = {Schedule}/>
-        </Wrapper>
+        </div>
+
         </Switch>
       </div>
     </Router>

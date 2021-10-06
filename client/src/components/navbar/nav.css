@@ -5,7 +5,7 @@ nav.navbar.navbar-default {
 nav {
   
     
-    background:linear-gradient(rgb(16, 130, 223)50%,rgba(25, 113, 214, 0.5)75%,rgba(28, 61, 104, 0.212)100%);
+    background:linear-gradient(rgb(16, 130, 223)50%,rgba(25, 113, 214, 0.5)75%,rgba(31, 48, 71, 0.151)100%);
     padding:20px;
     display:flex;
     justify-content: space-between;
