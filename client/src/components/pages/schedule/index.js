@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import {
+/*import {
   Inject,
   ScheduleComponent,
   Day,
@@ -10,7 +10,7 @@ import {
   Agenda,
 } from "@syncfusion/ej2-react-schedule";
 
-function Schedule() {
+function schedule() {
   return (
     <div className="appointment">
       <ScheduleComponent currentView="Month">
@@ -18,6 +18,13 @@ function Schedule() {
       </ScheduleComponent>
     </div>
   );
+}*/
+
+
+function schedule(){
+  return(
+  <div><h1>schedule goes here</h1></div>
+  )
 }
 
 export default Schedule;

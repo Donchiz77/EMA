@@ -1,72 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { NavLink } from "react-router-dom";
 import "./nav.css";
+import{menuList} from "./menuList";
+import Home from"../pages/home";
+import "../pages/patientRecord";
+import "../pages/schedule";
 
-function NavBar() {
-return(
-  <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  </div>
+
+function Navbar(){
+    const [clicked, setClicked] = useState(false);
+    //mapping menuList...pulling title and url
+      const MenuList = menuList.map(({url, title}, index)=> {
+        return(
+          //this key is used to identify each title...the NavLink is used unstead of an anchor tag
+            <li key={index}>
+              <NavLink exact to = {url} activeClassName ="active">{title}</NavLink>
+            </li>
+        );
+      });
+          const handleClick = ()=>{
+            setClicked(!clicked);
+          }
+  return(
+          <nav >
+          
+              <div className="logo-1">
+                  <h3 className = "logo-2">logo</h3>
+              </div>
+              <div className="menu-icon" onClick={handleClick}>
+                    <i className= {clicked ? "fas fa-times":"fas fa-bars"}></i>
+              </div>
+              <ul className={clicked ?"Menu-list": "Menu-list close" }>{MenuList}</ul>
+
+              <div>
+                <p className="logout">logout</p>
+              </div>
+          </nav>
   )
 }
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-// function navbar() {
-//   return (
-//     <nav className="topbar navbar navbar-expand-lg navbar-light bg-light">
-//       <Link className="navbar-brand" to="/">
-//         brandName
-//       </Link>
-//       <div>
-//         <ul className="navbar-nav">
-
-//           <li className="nav-item">
-//             <Link
-//               to="/"
-//               className={
-//                 window.location.pathname === "/" || window.location.pathname === "/Home"
-//                   ? "nav-link active"
-//                   : "nav-link"
-//               }
-//             >
-//               Home
-//             </Link>
-//           </li>
 
 
-//           <li className="nav-item">
-//             <Link
-//               to="/patientDemographic"
-//               className={window.location.pathname === "/patientDemographic" ? "nav-link active" : "nav-link"}
-//             >
-//               PatientDemogrphic
-//             </Link>
-//           </li>
 
 
-//           <li className="nav-item">
-//             <Link
-//               to="/patientRecord"
-//               className={window.location.pathname === "/patientRecord" ? "nav-link active" : "nav-link"}
-//             >
-//               patientRecord
-//             </Link>
-//           </li>
 
-//           <li className="nav-item">
-//             <Link
-//               to="/schedule"
-//               className={window.location.pathname === "/schedule" ? "nav-link active" : "nav-link"}
-//             >
-//               schedule
-//             </Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// }
 
-export default NavBar;
+export default Navbar
