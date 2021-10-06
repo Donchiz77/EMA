@@ -2,8 +2,114 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
 }
 
-.topbar {
-    display: flex;
-    justify-content:flex-start;
-    background-color: blueviolet;
+nav {
+  
+    
+    background:linear-gradient(rgb(16, 130, 223)50%,rgba(25, 113, 214, 0.5)75%,rgba(28, 61, 104, 0.212)100%);
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    color:azure;
+    position:relative;
+    z-index:99;
+    height: 100px;
+}
+
+.fas{
+  cursor:pointer;
+}
+
+.menu-icon .fa-times{
+  transform:rotate(360deg);
+  transition:all 0.2s ease-in-out;
+}
+
+.logo-2{
+  font-weight: 600;
+  font-size: 25px;
+  color: tomato;
+}
+
+.Menu-list{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 8%;
+}
+
+.Menu-list li:first-child a {
+  font-weight:300 ;
+  padding:5px 10px;
+  background-color:tomato;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  margin-left: 20px;
+}
+
+.Menu-list li a:hover, 
+.Menu-list li a.active{
+  background-color:white;
+  border-radius:10px;
+  color:darkblue;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.Menu-list li a{
+  text-decoration:none;
+  color:white;
+  font-weight: 400;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+.logout{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  color: tomato;
+}
+
+
+@media screen and( max-width:800px){
+    .logo-1{
+      font-size:20px;
+    }
+
+    .Menu-list li a{
+      font-size: 14px;
+      margin-left:10px;
+    }
+}
+@media screen and (max-width:600px){
+  nav{
+    display:block;
+    }
+
+    nav{
+      flex-direction:column;
+      width:100%;
+      position:absolute;
+      background-color:tomato;
+      padding:20px;
+      right:0%;
+      top:64px;
+
+    }
+    .Menu-list li{
+      margin-bottom:20px;
+      width:100%;
+      text-align:center;
+      transition: all 0.5s ease-in-out;
+    }
+}
+
+.menu-icon{
+  display:none;
+}
+
+.menu-list.close{
+  right:100%;
+  transition: all 0.5s ease-in-out;
 }

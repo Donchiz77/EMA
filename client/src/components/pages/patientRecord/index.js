@@ -1,12 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function PatientRecord() {
+function patientRecord() {
     return (
-    <div className="navbar">
-        record
-    </div>
-    );
+        <div><h1 className="header">patientRecord</h1></div>
+    )
 }
 
-export default PatientRecord;
+
+export default patientRecord;
