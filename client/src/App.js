@@ -22,9 +22,9 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-      <NavBar />
+      <NavBar/>
         <Switch>
-          <privateRoute exact path = "/" component = {PrivateRoute} />
+          
           <PrivateRoute exact path="/" component={PrivateScreen} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
@@ -38,10 +38,10 @@ const App = () => {
             path="/passwordreset/:resetToken"
             component={ResetPasswordScreen}
           />
-        
+        <privateRoute exact path = "/" component = {PrivateRoute} />
 
         <div>
-        //navbar hidden from home page
+    
         
 
         <Route  path = "/home" component = {Home}/>
