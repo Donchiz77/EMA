@@ -11,7 +11,7 @@ export const menuList = [
     },
  {
         title:"Schedule",
-        url:"/schedule"
+        url:"../../../src/App.js"
     },
  
 
