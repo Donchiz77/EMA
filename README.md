@@ -14,12 +14,12 @@ https://emaproject.herokuapp.com
 
 ### Breakdown of Tasks:
 
-Devin: Navbar, Heroku, Styling.
-Don: Databases, Authentication, Scheduler.
-Haley: Pages, Presentation, Styling.
-Jose: Scheduler, Pill Box, Databases.
-Steve: Routing, Navbar, Pages.
-Zach: Authentication, Login, Folder Structure.
+Devin: Navbar, Heroku, Styling <br />
+Don: Databases, Authentication, Scheduler <br />
+Haley: Pages, Presentation, Styling <br />
+Jose: Scheduler, Pill Box, Databases <br />
+Steve: Routing, Navbar, Pages <br />
+Zach: Authentication, Login, Folder Structure <br />
 
 
 
