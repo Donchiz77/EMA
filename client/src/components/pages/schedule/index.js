@@ -27,4 +27,4 @@ function schedule(){
   )
 }
 
-export default schedule;
+export default Schedule;
