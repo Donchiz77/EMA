@@ -1,21 +1,21 @@
 require("dotenv").config();
-var express = require("express");
-var path = require("path");
-var logger = require("morgan");
-var bodyParser = require("body-parser");
-var express = require("express");
-var router = express.Router();
-var mongoose = require("mongoose");
-var User = require("../models/user");
-var Calendar = require('../models/calendar').Calendar;
-var CalEvent = require('../models/calendar').CalEvent;
-var Mongoose = require("mongoose");
+let express = require("express");
+let path = require("path");
+let logger = require("morgan");
+let bodyParser = require("body-parser");
+let express = require("express");
+let router = express.Router();
+let mongoose = require("mongoose");
+let User = require("../models/user");
+let Calendar = require('../models/calendar').Calendar;
+let CalEvent = require('../models/calendar').CalEvent;
+let Mongoose = require("mongoose");
 require('date-format-lite');
 
 //TODO: all calendar get calls should go through a single function
 
 function makeNewCalendar(user, callback) {
-   var userCalendar = {};
+   let userCalendar = {};
    Calendar.create({
      name: 'My Calendar',
      userId: user._id,
@@ -66,7 +66,7 @@ function makeNewCalendar(user, callback) {
 
 //-- do not return entire calendar, no events
 function getUserCalendar(user, callback) {
-   var userCalendar = {};
+   let userCalendar = {};
    //-- user must always have a calendar[0]
    if(!user.calendars || !user.calendars[0]) {
       makeNewCalendar(user, function(err, calendar) {
@@ -122,7 +122,7 @@ router.post('/oneCal',function(req,res,next){
 });
 
 router.post('/add', function(req,res,next){
-    var userCalendar = {};
+    let userCalendar = {};
     Calendar.create({
         name: req.body.name,
         userId: req.body.user.id,
@@ -244,7 +244,7 @@ router.post('/edit', function(req,res,next){
             console.log(err);
         }
         if(calendar.userId == req.body.user.id){
-            var newContributor = {};
+            let newContributor = {};
             User.findOne({email: req.body.email}, function(err,contributor){
                 newContributor = contributor;
                 if(newContributor._id){
@@ -280,8 +280,8 @@ router.post('/edit', function(req,res,next){
         }
         if(calendar.people){
             for(let i=0; i<calendar.people.length; i++){
-                if(calendar.people[i].userId == req.body.user.id && calendar.people[i].permission == 'edit'){
-                    var newContributor = {};
+                if(calendar.people[i].userId === req.body.user.id && calendar.people[i].permission === 'edit'){
+                    let newContributor = {};
                     User.findOne({email: req.body.email}, function(err,contributor){
                         if(err){
                             res.status(500).send({error: true, message: 'user does not have an account yet! '+err.message});
