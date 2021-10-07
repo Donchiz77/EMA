@@ -21,10 +21,10 @@ function schedule() {
 }*/
 
 
-function schedule(){
+function Schedule(){
   return(
   <div><h1>schedule goes here</h1></div>
   )
 }
 
-export default schedule;
+export default Schedule;

@@ -1,10 +1,12 @@
+import classes from '../Navbar/nav.css'
 import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 import{menuList} from "./menuList";
-import Home from"../pages/home";
+import "../pages/home/index";
 import "../pages/patientRecord";
-import "../pages/schedule";
+import "../../../src/App.js";
+import logo from '../../assets/images/moricon.png'
 
 
 function Navbar(){
@@ -22,11 +24,14 @@ function Navbar(){
             setClicked(!clicked);
           }
   return(
+
           <nav >
-          
-              <div className="logo-1">
-                  <h3 className = "logo-2">logo</h3>
-              </div>
+              
+            <div className="logo">
+              <img className = {classes.logo} src={logo} alt="logo"></img> 
+            </div>
+      
+              
               <div className="menu-icon" onClick={handleClick}>
                     <i className= {clicked ? "fas fa-times":"fas fa-bars"}></i>
               </div>
@@ -36,6 +41,7 @@ function Navbar(){
                 <p className="logout">logout</p>
               </div>
           </nav>
+
   )
 }
 
