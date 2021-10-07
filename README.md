@@ -13,6 +13,7 @@ https://emaproject.herokuapp.com
 ### Presentation Link:
 
 ### Breakdown of Tasks:
+
 Devin: Navbar, Heroku, Styling.
 Don: Databases, Authentication, Scheduler.
 Haley: Pages, Presentation, Styling.
