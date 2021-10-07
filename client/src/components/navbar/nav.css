@@ -3,10 +3,9 @@ nav.navbar.navbar-default {
 }
 
 nav {
-  
-    
-    background:linear-gradient(rgb(16, 130, 223)50%,rgba(25, 113, 214, 0.5)75%,rgba(28, 61, 104, 0.212)100%);
-    padding:20px;
+    background:rgb(3, 52, 80);
+    opacity: 0.7;
+    padding: 30px;
     display:flex;
     justify-content: space-between;
     color:azure;
@@ -59,16 +58,16 @@ nav {
 .Menu-list li a{
   text-decoration:none;
   color:white;
-  font-weight: 400;
+  font-weight: 500;
   padding: 5px 10px;
   margin-left: 20px;
 }
 
 .logout{
   display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  color: tomato;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(209, 16, 16);
 }
 
 
@@ -78,7 +77,7 @@ nav {
     }
 
     .Menu-list li a{
-      font-size: 14px;
+      font-size: 30px;
       margin-left:10px;
     }
 }
@@ -91,14 +90,14 @@ nav {
       flex-direction:column;
       width:100%;
       position:absolute;
-      background-color:tomato;
+      background-color:rgb(207, 49, 49);
       padding:20px;
       right:0%;
       top:64px;
 
     }
     .Menu-list li{
-      margin-bottom:20px;
+      margin: bottom 14px;
       width:100%;
       text-align:center;
       transition: all 0.5s ease-in-out;
@@ -112,4 +111,8 @@ nav {
 .menu-list.close{
   right:100%;
   transition: all 0.5s ease-in-out;
+}
+
+.logo .logo {
+
 }

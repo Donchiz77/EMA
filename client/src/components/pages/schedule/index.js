@@ -21,7 +21,7 @@ function schedule() {
 }*/
 
 
-function schedule(){
+function Schedule(){
   return(
   <div><h1>schedule goes here</h1></div>
   )

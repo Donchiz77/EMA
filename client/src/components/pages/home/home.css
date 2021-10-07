@@ -1,0 +1,9 @@
+body {
+    background-image: url("../../../assets/images/loginback.jpg");
+    background-size: cover;
+}
+
+.index .Photo .Logo {
+    height: 500px;
+    
+}
