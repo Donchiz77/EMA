@@ -13,12 +13,14 @@ https://emaproject.herokuapp.com
 ### Presentation Link:
 
 ### Breakdown of Tasks:
-Don: Databases, Authentication, Scheduler
-Zach: Authentication, Login, Folder Structure 
-Haley: Pages, Presentation, Styling
-Steve: Routing, Navbar, Pages
-Jose: Scheduler, Pill Box, Databases
-Devin: Navbar, Heroku, Styling
+Devin: Navbar, Heroku, Styling.
+Don: Databases, Authentication, Scheduler.
+Haley: Pages, Presentation, Styling.
+Jose: Scheduler, Pill Box, Databases.
+Steve: Routing, Navbar, Pages.
+Zach: Authentication, Login, Folder Structure.
+
+
 
 ### Challenges/Bugs:
 Problems with heroku deployment, as well as github pushing/pullling occasionally.
@@ -26,6 +28,8 @@ Problems with heroku deployment, as well as github pushing/pullling occasionally
 Finding third party medicial apis we could use to import data.
 
 Hiding the navbar until the user has logged into the application.
+
+Building
 
 ### Future Developments:
 
