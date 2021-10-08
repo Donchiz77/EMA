@@ -49,6 +49,10 @@ Live Chat/Video chat feature with medical staff.
 
 Disclaimer about medical information being provided.
 
+Touch ID/Face ID Compatibility.
+
+Additional styling to make the application look more trendy/sleek.
+
 
 
 
