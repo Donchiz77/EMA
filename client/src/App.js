@@ -2,30 +2,43 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Routing
 import PrivateRoute from "./components/routing/PrivateRoute";
-
-// Screens
-import PrivateScreen from "./components/screens/PrivateScreen";
-import LoginScreen from "./components/screens/LoginScreen";
-import RegisterScreen from "./components/screens/RegisterScreen";
-import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
-import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
-
-import Wrapper from"./components/pages/Wrapper/index";
-import NavBar from "./components/Navbar";
-
-import Home from "./components/pages/home";
-import Patientrecord from "./components/pages/patientRecord";
-import Schedule from "./components/pages/schedule";
-
+import Navbar from "./components/Navbar/index";
+import Home from "./components/pages/home/index";
+import LoginScreen from "./components/screens/Login";
+import RegisterScreen from "./components/screens/Register";
+import ForgotPasswordScreen from "./components/screens/ForgotPassword";
+import ResetPasswordScreen from "./components/screens/ResetPassword";
+import React from "react";
+import Schedule from "./components/pages/schedule/index";
+import PatientRecord from "./components/pages/patientRecord/index";
+//import DefHeader from "./components/pages/definition/defHeader";
+////import Definition from "./components/pages/definition/definition";
+//import { Container } from "@material-ui/core";
 
 const App = () => {
   return (
+    //<div
+    //  className="App"
+    //  style={{ height: "100vh", backgroundColor: "gray", color: "white" }}
+    //>
+    //  <Container
+    //    maxWidth="md"
+    //    style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+    //  >
+    //    <DefHeader category={category} setCategory={setCategory} />
+    //  </Container>
+    //</div>
     <Router>
       <div className="app">
-      <NavBar />
         <Switch>
-          <Wrapper>
-          <PrivateRoute exact path="/" component={PrivateScreen} />
+          <PrivateRoute
+            exact
+            path="/patientRecord"
+            components={<PatientRecord />}
+          />
+          <PrivateRoute exact path="/home" components={<Home />} />
+          <PrivateRoute exact path="/schedule" components={<Schedule />} />
+          <Route exact path="/" component={Navbar} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           <Route
@@ -38,13 +51,7 @@ const App = () => {
             path="/passwordreset/:resetToken"
             component={ResetPasswordScreen}
           />
-        
 
-        
-        <Route  path = "/home" component = {Home}/>
-        <Route  path = "/patientRecord" component = {Patientrecord}/>
-        <Route path = "/schedule" component = {Schedule}/>
-        </Wrapper>
         </Switch>
       </div>
     </Router>
