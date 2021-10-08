@@ -3,16 +3,9 @@ nav.navbar.navbar-default {
 }
 
 nav {
-<<<<<<< HEAD
-  
-    
-    background:linear-gradient(rgb(16, 130, 223)50%,rgba(25, 113, 214, 0.5)75%,rgba(31, 48, 71, 0.151)100%);
-    padding:20px;
-=======
     background:rgb(3, 52, 80);
     opacity: 0.7;
     padding: 30px;
->>>>>>> 2f3b972872cc7ffcf001313ffb68e37828b937fa
     display:flex;
     justify-content: space-between;
     color:azure;
