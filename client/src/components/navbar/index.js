@@ -35,7 +35,9 @@ function Navbar() {
       <ul className={clicked ? "Menu-list" : "Menu-list close"}>{MenuList}</ul>
 
       <div>
-        <p className="logout">Logout</p>
+        <button className="logout">
+          Logout
+        </button>
       </div>
     </nav>
   );
