@@ -30,7 +30,7 @@ Finding third party medicial apis we could use to import data.
 
 Hiding the navbar until the user has logged into the application.
 
-Building
+Building the scheduler. 
 
 ### Future Developments:
 

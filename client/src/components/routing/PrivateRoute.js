@@ -36,14 +36,19 @@ const PrivateRoute = ({ components, path }) => {
       path={path}
       component={() =>
         localStorage.getItem("authToken") ? (
+
           <>
             <Navbar />
             {components}
           </>
+
         ) : (
           <Redirect to="/login" />
+        
         )
+        
       }
+      
     />
   );
 };
