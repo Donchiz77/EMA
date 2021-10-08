@@ -3,12 +3,10 @@ nav.navbar.navbar-default {
 }
 
 nav {
-    background:rgb(3, 52, 80);
-    opacity: 0.7;
-    padding: 30px;
+    background:rgba(0, 74, 124, 0.719);
+    padding:20px;
     display:flex;
     justify-content: space-between;
-    color:azure;
     position:relative;
     z-index:99;
     height: 100px;
@@ -23,12 +21,6 @@ nav {
   transition:all 0.2s ease-in-out;
 }
 
-.logo-2{
-  font-weight: 600;
-  font-size: 25px;
-  color: tomato;
-}
-
 .Menu-list{
   list-style-type: none;
   display:flex;
@@ -38,19 +30,22 @@ nav {
 }
 
 .Menu-list li:first-child a {
-  font-weight:300 ;
+  font-weight: 500;
   padding:5px 10px;
-  background-color:tomato;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
   margin-left: 20px;
 }
 
-.Menu-list li a:hover, 
+.Menu-list li a:hover{
+  background-color:rgb(202, 202, 202);
+  border-radius: 10px;
+  color:rgb(2, 0, 133);
+} 
 .Menu-list li a.active{
   background-color:white;
   border-radius:10px;
-  color:darkblue;
+  color:rgb(2, 0, 133);
   transition: all 0.5s ease-in-out;
 
 }
@@ -64,20 +59,18 @@ nav {
 }
 
 .logout{
-  display: inline-block;
-  font-weight: 700;
+  border-radius:10px;
+  background-color: rgb(0, 56, 94);
+  font-weight: 400;
   font-size: 30px;
-  color: rgb(209, 16, 16);
+  color: rgb(255, 255, 255);
 }
 
 
 @media screen and( max-width:800px){
-    .logo-1{
-      font-size:20px;
-    }
-
     .Menu-list li a{
-      font-size: 30px;
+      font-size: 300px;
+      font-weight:bold;
       margin-left:10px;
     }
 }
@@ -113,6 +106,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
-.logo .logo {
-
+.icon {
+  height: 5px;
+  width: 5px;
 }
