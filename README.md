@@ -37,7 +37,7 @@ Building the scheduler.
 ### Future Developments:
 Live Chat/Video chat feature with medical staff.
 
-
+Disclaimer about medical information being provided.
 
 
 
