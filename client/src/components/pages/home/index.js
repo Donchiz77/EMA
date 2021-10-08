@@ -9,10 +9,8 @@ import logo from '../../../assets/images/Moar.png';
 
 function home(){
     return (
-      <div>
-        <h1>Home</h1>
-      
-        
+      <div className={classes.Photo}>
+        <img className={classes.logo} src={logo} alt="logo"></img> 
       </div>
     );
   }
