@@ -1,7 +1,7 @@
 import { Redirect, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from "../Navbar/index";
+// import Navbar from "../Navbar/index";
 
 const PrivateRoute = ({ components, path }) => {
   const [error, setError] = useState("");
