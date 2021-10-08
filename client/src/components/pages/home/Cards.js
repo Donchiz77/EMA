@@ -11,10 +11,10 @@ import Card from "./index.js";
                         <div className="row">
                             <div className= "col-md-4"></div> 
                             <Card/> 
-                            <div className= "col-md-4"></div> 
+                            {/* <div className= "col-md-4"></div> 
                             <Card/>
                             <div className= "col-md-4"></div>
-                            <Card/> 
+                            <Card/>  */}
                         </div>
 
                     </div>
