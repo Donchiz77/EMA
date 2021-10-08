@@ -1,15 +1,14 @@
 require("dotenv").config();
-let express = require("express");
-let path = require("path");
-let logger = require("morgan");
-let bodyParser = require("body-parser");
-let express = require("express");
-let router = express.Router();
-let mongoose = require("mongoose");
-let User = require("../models/user");
-let Calendar = require('../models/calendar').Calendar;
-let CalEvent = require('../models/calendar').CalEvent;
-let Mongoose = require("mongoose");
+const express = require("express");
+const path = require("path");
+const logger = require("morgan");
+const bodyParser = require("body-parser");
+const router = express.Router();
+const mongoose = require("mongoose");
+const User = require("../models/user");
+const Calendar = require('../models/calendar').Calendar;
+const CalEvent = require('../models/calendar').CalEvent;
+const Mongoose = require("mongoose");
 require('date-format-lite');
 
 //TODO: all calendar get calls should go through a single function
