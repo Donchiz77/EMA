@@ -11,7 +11,7 @@ Mother Of All Records is an application for all your medical and personal health
 ### Deployable Link:
 https://emaproject.herokuapp.com
 ### Presentation Link:
-
+https://docs.google.com/presentation/d/1ch4Ml_ROShBs4K_usX-nnjPsRPeJiqdR8WGN-zl6IVU/edit?usp=sharing
 ### Breakdown of Tasks:
 
 Devin: Navbar, Heroku, Styling <br />
