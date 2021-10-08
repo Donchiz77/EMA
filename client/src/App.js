@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Routing
 import PrivateRoute from "./components/routing/PrivateRoute";
-import Navbar from "./components/Navbar/index";
+// import Navbar from "./components/Navbar/index";
 import Home from "./components/pages/home/index";
 import LoginScreen from "./components/screens/Login";
 import RegisterScreen from "./components/screens/Register";
