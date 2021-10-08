@@ -32,7 +32,12 @@ Hiding the navbar until the user has logged into the application.
 
 Building the scheduler. 
 
+
+
 ### Future Developments:
+Live Chat/Video chat feature with medical staff.
+
+
 
 
 
