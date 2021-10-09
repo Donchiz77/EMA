@@ -37,6 +37,7 @@ const App = () => {
             path="/passwordreset/:resetToken"
             component={ResetPassword}
           />
+
         </Switch>
       </div>
     </Router>
