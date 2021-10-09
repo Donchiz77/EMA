@@ -33,6 +33,7 @@ function home () {
           </div> 
   </div>
 </section>
+
 </div>
   ) 
 }
