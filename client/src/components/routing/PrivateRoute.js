@@ -40,7 +40,7 @@ const PrivateRoute = ({ components, path }) => {
 
           <>
             <Navbar />
-            <Home />
+            
             {components}
           </>
 
