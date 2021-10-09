@@ -53,6 +53,8 @@ Touch ID/Face ID Compatibility.
 
 Additional styling to make the application look more trendy/sleek.
 
+Adding the Medicine Tracker.
+
 
 
 
