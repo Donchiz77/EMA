@@ -8,28 +8,42 @@ body{
     line-height: 1.5;
 }
 
-.container{
-    margin-top: 5px;
-    margin-left:400px;
-    background-color: white;
-    padding:5px;
-    
-}
 
-.logo{
+   .logo{
     height:500px;
-    margin-left:700px;
+    width: 40%!important;
     margin-top:30px;
+    position:left;
+    left:10%
+} 
+
+
+
+
+.para-div{
+    height:500px;
+    width: 40%!important;
+    margin-top:30px;
+    padding: 5px;
+    background-color:whitesmoke;
+    display: block;
+    position: absolute;
+    right: 10%;
+    top:30px;
+
+
 }
 
-.overflow{
-    overflow: hidden;
+.logo-div{
+    position: absolute;
+    left:9%;
+    display: block;
 }
 
-.main{
-    text-align: center;
-    margin-top:40px;
+.main-div{
+    position: relative;
 }
+
 
 .intro{
     text-align: left;
@@ -45,6 +59,27 @@ body{
     font-weight:500px;
 }
 
+@media screen and( max-width:800px){
+    .logo{
+      font-size: 300px;
+      font-weight:bold;
+      margin-left:10px;
+    }
+}
+@media screen and (max-width:600px){
+  nav{
+    display:block;
+    }
 
-/*footer*/
+    nav{
+      flex-direction:column;
+      width:100%;
+      position:absolute;
+      background-color:rgb(207, 49, 49);
+      padding:20px;
+      right:0%;
+      top:64px;
 
+    }
+
+}
