@@ -28,7 +28,7 @@ function home () {
                 <p>What makes M.O.A.R different is that we provide Medical plan with doctors and other porviders guiding how we deliver the high quality, coordianted care you need  </p>
 
                 <h3>Commitment to Community</h3>
-                <p>M.O.A.R mission is to transform the health of the community, one person at a time With offices in Charllote, Mathews, Pinville, our dedicated
+                <p>M.O.A.R mission is to transform the health of the community, one person at a time With offices in Charlotte, Matthews, Pineville, our dedicated
                 team of doctors, social service workers and customer service representative are commited to improving health in North Carolina</p>
           </div> 
   </div>
