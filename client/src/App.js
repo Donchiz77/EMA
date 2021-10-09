@@ -28,7 +28,6 @@ const App = () => {
             path="/patientRecord" 
             components={<PatientRecord />}
           />
-          <PrivateRoute exact path="/" component={Navbar} />
           
           <Route
             exact
