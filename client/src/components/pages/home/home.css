@@ -8,6 +8,13 @@ body{
     line-height: 1.5;
 }
 
+.container{
+    margin-top: 5px;
+    justify-content: center;
+    background-color: white;
+    padding:5px;
+    
+}
 
    .logo{
     height:500px;
@@ -30,7 +37,6 @@ body{
     position: absolute;
     right: 10%;
     top:30px;
-
 
 }
 

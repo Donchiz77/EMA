@@ -9,7 +9,8 @@ import LoginScreen from "./components/screens/Login";
 import RegisterScreen from "./components/screens/Register";
 import ForgotPasswordScreen from "./components/screens/ForgotPassword";
 import ResetPassword from "./components/screens/ResetPassword";
-import Schedule from "./components/pages/Schedule/index.js";
+import React from "react";
+import Schedule from "./components/pages/schedule/index.js";
 import PatientRecord from "./components/pages/patientRecord/index";
 
 const App = () => {

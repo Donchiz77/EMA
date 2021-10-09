@@ -6,7 +6,7 @@ export const menuList = [
     url: "/home",
   },
   {
-    title: "Patientrecord",
+    title: "Medicine Tracker",
     url: "/patientRecord",
   },
   {
