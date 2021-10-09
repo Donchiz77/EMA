@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 import { menuList } from "./menuList";
+import icon from "../../assets/images/navlogo.png";
 //import Home from"../pages/home";
 import "../pages/patientRecord";
 import "../pages/schedule";
-
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   //mapping menuList...pulling title and url
@@ -25,8 +25,8 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="logo-1">
-        <h3 className="logo-2">logo</h3>
+      <div>
+        <img className="icon" src={icon} alt="icon"></img>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -34,7 +34,7 @@ function Navbar() {
       <ul className={clicked ? "Menu-list" : "Menu-list close"}>{MenuList}</ul>
 
       <div>
-        <p className="logout">Logout</p>
+        <button className="logout">Logout</button>
       </div>
     </nav>
   );
