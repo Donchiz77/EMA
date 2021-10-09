@@ -17,15 +17,15 @@ const App = () => {
     <Router>
       <div className="app">
         <Switch>
-          
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           
           <PrivateRoute exact path="/home" components={<Home />} />
-          <PrivateRoute exact path="/Schedule" components={<Schedule />} />
+          <PrivateRoute exact path="/schedule" components={<Schedule />} />
+          <PrivateRoute exact path="/" component={Navbar} />
           <PrivateRoute
             exact
-            path="/patientRecord"
+            path="/patientRecord" 
             components={<PatientRecord />}
           />
           <PrivateRoute exact path="/" component={Navbar} />
@@ -36,7 +36,7 @@ const App = () => {
             component={ForgotPasswordScreen}
           />
           <Route
-            exact
+            exact 
             path="/passwordreset/:resetToken"
             component={ResetPassword}
           />

@@ -2,15 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital,wght@0,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 body{
-    background-color:rgba(248,248,248) !important;
+    background-image: url("../../../assets/images/loginback.jpg");
+    background-size: auto;
     font-family: 'montserrat';
     line-height: 1.5;
-}
-
-
-
-section{
-    
 }
 
 .container{

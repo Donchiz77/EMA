@@ -3,7 +3,7 @@
 nav.navbar.navbar-default {
   margin-bottom: 0;
 }
-
+/* adding comments for heroku push */
 nav {
     background:rgba(63, 91, 109, 0.829);
     padding:20px;

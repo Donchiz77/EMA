@@ -1,7 +1,8 @@
 import { Redirect, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from "../Navbar/index";
+import Home from "../pages/home";
+import Navbar from "../navbar/index";
 
 const PrivateRoute = ({ components, path }) => {
   const [error, setError] = useState("");
@@ -39,6 +40,7 @@ const PrivateRoute = ({ components, path }) => {
 
           <>
             <Navbar />
+            <Home />
             {components}
           </>
 
