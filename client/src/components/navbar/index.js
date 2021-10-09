@@ -5,7 +5,7 @@ import { menuList } from "./menuList";
 import icon from "../../assets/images/navlogo.png";
 //import Home from"../pages/home";
 import "../pages/patientRecord";
-import "../pages/Schedule";
+import "../pages/schedule";
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   //mapping menuList...pulling title and url
