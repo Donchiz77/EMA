@@ -9,7 +9,11 @@ import RegisterScreen from "./components/screens/Register";
 import ForgotPasswordScreen from "./components/screens/ForgotPassword";
 import ResetPassword from "./components/screens/ResetPassword";
 import React from "react";
+<<<<<<< HEAD
 import Schedule from "./components/pages/Schedule/index.js";
+=======
+import Schedule from "./components/pages/schedule/index";
+>>>>>>> 90c1855c3 (heroku push)
 import PatientRecord from "./components/pages/patientRecord/index";
 
 const App = () => {
@@ -21,7 +25,7 @@ const App = () => {
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           <PrivateRoute exact path="/home" components={<Home />} />
-          <PrivateRoute exact path="/Schedule" components={<Schedule />} />
+          <PrivateRoute exact path="/schedule" components={<Schedule />} />
           <PrivateRoute
             exact
             path="/patientRecord"
