@@ -9,7 +9,7 @@ import RegisterScreen from "./components/screens/Register";
 import ForgotPasswordScreen from "./components/screens/ForgotPassword";
 import ResetPassword from "./components/screens/ResetPassword";
 import React from "react";
-import Schedule from "./components/pages/schedule/index";
+import Schedule from "./components/pages/Schedule/index";
 import PatientRecord from "./components/pages/patientRecord/index";
 
 const App = () => {
@@ -21,12 +21,12 @@ const App = () => {
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           <PrivateRoute exact path="/home" components={<Home />} />
+          <PrivateRoute exact path="/Schedule" components={<Schedule />} />
           <PrivateRoute
             exact
             path="/patientRecord"
             components={<PatientRecord />}
           />
-          <PrivateRoute exact path="/schedule" components={<Schedule />} />
           <Route
             exact
             path="/forgotpassword"
@@ -37,7 +37,6 @@ const App = () => {
             path="/passwordreset/:resetToken"
             component={ResetPassword}
           />
-
         </Switch>
       </div>
     </Router>
