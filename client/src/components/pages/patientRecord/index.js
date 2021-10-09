@@ -3,7 +3,7 @@ import "./style.css";
 
 function patientRecord() {
     return (
-        <div><h1 className="header">patientRecord</h1></div>
+        <div><h1 className="header">MEDICINE TRACKER: FEATURE COMING SOON</h1></div>
     )
 }
 
