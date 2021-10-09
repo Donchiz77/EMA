@@ -1,5 +1,6 @@
-import { render } from "@testing-library/react";
+//import { render } from "@testing-library/react";
 import React from "react";
+
 import classes from '../home/home.css';
 import "./home.css";
 import logo from '../../../assets/images/Moar.png';
@@ -11,6 +12,13 @@ import Card from './Cards';
 
 function home () {
   return(
+
+  <div>
+    <div className={classes.Photo}>
+      <img className={classes.Logo} src={logo} alt="logo"></img>
+    </div>
+
+
   <section className="container">
     <div className=" container">
           <div className="intro ">
@@ -90,8 +98,10 @@ function home () {
 
   
 </section>
+</div>
   ) 
 }
 
 export default home;
+
 
